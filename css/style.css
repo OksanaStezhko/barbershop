@@ -1,0 +1,168 @@
+/* Для тестирования */
+.container {
+  outline: 2px solid tomato;
+  background-color: var(--grey);
+}
+
+.section {
+  outline: 3px solid green;
+}
+
+:root {
+  --accent-color: #ff6c00;
+  --dark-color: #303030;
+  --main-color: #555555;
+  --white: #ffffff;
+  --grey: #9da4bd;
+}
+
+/* FONTS */
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/open_sans/opensans-regular-webfont.woff2") format("woff2"),
+    url("../fonts/open_sans/opensans-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/open_sans/opensans-semibold-webfont.woff2") format("woff2"),
+    url("../fonts/open_sans/opensans-semibold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.625;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+}
+
+/* Общее - контентные изображения */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Общее - списки*/
+.list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Общее - ссылки */
+.link {
+  text-decoration: none;
+  margin: 0px;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+/* Общее - скрыть объект */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Общее - без марджинов */
+.nomargin {
+  margin: 0px;
+}
+.flexbox {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.topline {
+  background-color: rgb(133, 124, 124);
+}
+
+.topline .container {
+  padding-top: 40px;
+}
+/* Общее - основной контейнер */
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.title-page {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--white);
+}
+
+.title-section {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.167;
+  letter-spacing: 0.05em;
+  color: var(--dark-color);
+
+  /* margin-bottom: 44px; */
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--dark-color);
+
+  /* margin-bottom: 20px; */
+}
+
+.nav-link,
+.nav-button {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.1em;
+  color: var(--white);
+  text-decoration: none;
+}
+.nav-link {
+  margin-right: 40px;
+}
+
+.tell-link {
+  margin-left: auto;
+  margin-right: 40px;
+}
+.logo {
+  margin-right: 72px;
+}
+
+.header .button {
+  padding: 12px 20px;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+}
+.header-navigation {
+  padding-bottom: 15px;
+}
