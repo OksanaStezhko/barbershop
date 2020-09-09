@@ -1,0 +1,57 @@
+/* Общее - контентные изображения */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Общее - списки*/
+.list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Общее - ссылки */
+.link {
+  text-decoration: none;
+  margin: 0px;
+}
+
+/* Общее - скрыть объект */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Общее - без марджинов */
+.nomargin {
+  margin: 0px;
+}
+.flexbox {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+/* Общее - секции*/
+.section {
+  text-align: center;
+}
+
+/* Общее - основной контейнер */
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
