@@ -91,6 +91,9 @@ img {
   flex-wrap: wrap;
 }
 
+.section {
+  padding-bottom: 130px;
+}
 /* Общее - основной контейнер */
 .container {
   width: 1200px;
@@ -139,18 +142,16 @@ img {
   /* margin-bottom: 20px; */
 }
 
-.nav-link,
-.nav-button {
+.nav-link {
+  margin-right: 40px;
+  margin-left: auto;
+
   font-weight: 600;
   font-size: 12px;
   line-height: 1.333;
   letter-spacing: 0.1em;
   color: var(--white);
   text-decoration: none;
-}
-.nav-link {
-  margin-right: 40px;
-  margin-left: auto;
 }
 
 .tell-link {
@@ -161,12 +162,23 @@ img {
   margin-right: 72px;
 }
 
-.header .button {
+.button {
   padding: 12px 20px;
   border: 1px solid var(--accent-color);
   border-radius: 25px;
-  background-color: transparent;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
 }
+
+.header .button {
+  background-color: transparent;
+  color: var(--white);
+}
+
 .header-navigation {
   padding-bottom: 15px;
 }
@@ -191,7 +203,7 @@ img {
   padding: 272px 0px 206px 100px;
 }
 
-.social-list::before,
+.primary .social-list::before,
 .content .subtitle::before {
   display: inline-block;
 
@@ -251,4 +263,42 @@ img {
 }
 .content .subtitle::before {
   margin-right: 20px;
+}
+
+.about-images,
+.about .content {
+  width: calc((100% - 30px) / 2);
+}
+.about-images-item:first-child {
+  margin-right: 30px;
+}
+
+.about .content {
+  padding-left: 30px;
+  padding-right: 60px;
+}
+
+.about .subtitle {
+  margin-bottom: 20px;
+}
+
+.about .title-section {
+  margin-bottom: 20px;
+}
+
+.about .text {
+  margin-bottom: 20px;
+}
+
+.about .description {
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+
+  color: var(--main-color);
+}
+
+.about .button {
+  color: var(--dark-color);
 }
