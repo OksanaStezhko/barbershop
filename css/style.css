@@ -1,11 +1,11 @@
 /* Для тестирования */
 .container {
   outline: 2px solid tomato;
-  background-color: var(--grey);
+  /* background-color: var(--grey); */
 }
 
 .section {
-  outline: 3px solid green;
+  /* outline: 3px solid green; */
 }
 
 :root {
@@ -14,6 +14,7 @@
   --main-color: #555555;
   --white: #ffffff;
   --grey: #9da4bd;
+  --light-grey: #9da4bd;
 }
 
 /* FONTS */
@@ -90,13 +91,6 @@ img {
   flex-wrap: wrap;
 }
 
-.topline {
-  background-color: rgb(133, 124, 124);
-}
-
-.topline .container {
-  padding-top: 40px;
-}
 /* Общее - основной контейнер */
 .container {
   width: 1200px;
@@ -104,6 +98,14 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.topline-navigation {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  align-items: center;
+  /* background-color: rgb(133, 124, 124); */
 }
 
 .title-page {
@@ -148,6 +150,7 @@ img {
 }
 .nav-link {
   margin-right: 40px;
+  margin-left: auto;
 }
 
 .tell-link {
@@ -162,7 +165,90 @@ img {
   padding: 12px 20px;
   border: 1px solid var(--accent-color);
   border-radius: 25px;
+  background-color: transparent;
 }
 .header-navigation {
   padding-bottom: 15px;
+}
+.header-nav {
+  align-items: center;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.primary .container {
+  background-image: url(../images/slider-3.jpg);
+  background-repeat: no-repeat;
+  background-position: top 0px left 115px;
+}
+.primary .content {
+  max-width: 50%;
+  padding: 272px 0px 206px 100px;
+}
+
+.social-list::before,
+.content .subtitle::before {
+  display: inline-block;
+
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: var(--main-color);
+}
+
+.social-list::before {
+  margin-right: 40px;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 40px;
+}
+.topline-slider {
+  position: relative;
+  padding-bottom: 40px;
+  padding-right: 55px;
+  padding-left: 25px;
+  width: 100px;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.social-list {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform-origin: bottom left;
+  transform: rotate(-90deg) translateX(40px);
+  align-items: center;
+}
+
+.social-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--dark-color);
+  text-decoration: none;
+}
+
+.content .subtitle {
+  display: inline-flex;
+  align-items: center;
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--light-grey);
+}
+.content .subtitle::before {
+  margin-right: 20px;
 }
